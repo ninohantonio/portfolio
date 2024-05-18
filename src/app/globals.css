@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background-primary: #262642,
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.custom-cursor{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius:  50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+a{
+  cursor: none;
+}
+.cursor-label{
+  padding-top:  8px;
+  font-size: 4px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: normal;
+  }
+}
+.phrase {
+  line-height: 1.1;
+}
+
+.center-absolute{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-absolute-hero{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0, -50%);
+}
+
+.border-b-fine{
+  border-bottom: 1px solid #313188;
+}
+
+.border-fine{
+  border: 1px solid #a19898;
+}
