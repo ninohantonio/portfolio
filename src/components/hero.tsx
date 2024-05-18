@@ -11,7 +11,7 @@ export default function HeroMain(){
                 <div className={"text-blue-800 basis-[15%] text-[200px] mr-1 pt-10"}>
                     <GiCurlyWing/>
                 </div>
-                <div className="text-white flex flex-col items-center justify-start text-4xl font-bold mt-28 h-[60vh] mt-20 w-[40vw] py-10 px-6 space-y-8 z-10 bg-gradient-to-r from-gray-700 to-transparent bg-opacity-20 rounded-bl-2xl">
+                <div className="text-white flex flex-col items-center justify-start text-4xl font-bold mt-28 mt-20 w-[40vw] py-10 px-6 space-y-8 z-10 bg-gradient-to-r from-gray-700 to-transparent bg-opacity-20 rounded-bl-2xl">
                    <h1>
                        Hey 👋. I&apos;m <span className="text-blue-500">Antonino Iraky Ny Avo. </span>Developer and Information Systems Designer
                    </h1>
