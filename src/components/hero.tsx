@@ -31,7 +31,7 @@ export default function HeroMain(){
                     👋🏿
                 </div> */}
             </div>
-            <div className="ml-20 px-10 from-gray-700 to-transparent rounded-b-xl">
+            <div className="ml-20 px-10 from-gray-700 to-transparent rounded-b-xl h-full w-full">
                 <Image src={"/NinoPhoto.png"} alt={"antoninoPhoto"} width={300} height={300}/>
             </div>
         </div>

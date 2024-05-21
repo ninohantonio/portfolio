@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AboutCard from "./card";
 import { AnimatePresence, motion } from "framer-motion";
+import SectionTitle from "../tittle_section";
 
 export const AboutCardItems = [
     {title: "Academic journey", content: "2023-2024: third year in a Bachelor's degree in General Computer Science at ENI Fianarantsoa Madagascar"},
@@ -13,11 +14,7 @@ export default function LeftAbout() {
     let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
         <div className="h-full bg-black w-full flex flex-col justify-center items-center">
-            <div className="flex items-center justify-center bg-transparent">
-                <h1 className="text-5xl font-bold rainbow-text">
-                    ABOUT ME
-                </h1>
-            </div>
+            <SectionTitle title="ABOUT ME"/>
             <div className="flex flex-wrap justify-center items-center w-[90%] h-[85%] py-[5%]">
                 {
                     AboutCardItems.map((item, key) => (
@@ -46,7 +43,7 @@ export default function LeftAbout() {
                                     />
                                 )}
                             </AnimatePresence>
-                            <AboutCard title={item.title} content={item.content} />
+                            <AboutCard title={item.title} content={item.content}/>
                         </div>
                     ))
                 }
