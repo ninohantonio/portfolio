@@ -56,7 +56,7 @@ export default function SkillsContainer(){
                             <div className="flex flex-row space-x-1">
                             {
                                 item.skills?.map((item, key) => (
-                                        <div className="flex flex-row items-center space-x-2 px-4 bg-gradient-to-r from-gray-800 to-transparent py-2 px-2 rounded-sm border-fine">
+                                        <div className="flex flex-row items-center space-x-2 px-4 bg-gradient-to-r from-gray-800 to-transparent py-2 px-2 rounded-sm border-fine" key={key}>
                                             <Image src={item.logo} alt={item.alt} width={35} height={35}/>
                                             <span className="text-[#c4e4db]">{item.text}</span>
                                         </div>
@@ -76,7 +76,7 @@ export default function SkillsContainer(){
                             <div className="flex flex-row space-x-1">
                             {
                                 item.skills?.map((item, key) => (
-                                        <div className="flex flex-row items-center space-x-2 px-4 bg-gradient-to-r from-gray-800 to-transparent py-2 px-2 rounded-sm border-fine">
+                                        <div className="flex flex-row items-center space-x-2 px-4 bg-gradient-to-r from-gray-800 to-transparent py-2 px-2 rounded-sm border-fine" key={key}> 
                                             <Image src={item.logo} alt={item.alt} width={35} height={35}/>
                                             <span className="text-[#c4e4db]">{item.text}</span>
                                         </div>
@@ -96,7 +96,7 @@ export default function SkillsContainer(){
                             <div className="flex flex-row space-x-1">
                             {
                                 item.skills?.map((item, key) => (
-                                        <div className="flex flex-row items-center space-x-2 px-4 bg-gradient-to-r from-gray-800 to-transparent py-2 px-2 rounded-sm border-fine">
+                                        <div className="flex flex-row items-center space-x-2 px-4 bg-gradient-to-r from-gray-800 to-transparent py-2 px-2 rounded-sm border-fine" key={key}>
                                             <Image src={item.logo} alt={item.alt} width={35} height={35}/>
                                             <span className="text-[#c4e4db]">{item.text}</span>
                                         </div>
@@ -116,7 +116,7 @@ export default function SkillsContainer(){
                             <div className="flex flex-row space-x-1">
                             {
                                 item.skills?.map((item, key) => (
-                                        <div className="flex flex-row items-center space-x-2 px-4 bg-gradient-to-r from-gray-800 to-transparent py-2 px-2 rounded-sm border-fine">
+                                        <div className="flex flex-row items-center space-x-2 px-4 bg-gradient-to-r from-gray-800 to-transparent py-2 px-2 rounded-sm border-fine" key={key}>
                                             <Image src={item.logo} alt={item.alt} width={35} height={35}/>
                                             <span className="text-[#c4e4db]">{item.text}</span>
                                         </div>
