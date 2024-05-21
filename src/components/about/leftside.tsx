@@ -23,6 +23,7 @@ export default function LeftAbout() {
                     AboutCardItems.map((item, key) => (
                         <div 
                             className="relative group block p-2 h-[50%] w-[40%]"
+                            key={key}
                             onMouseEnter={() => setHoveredIndex(key)}
                             onMouseLeave={() => setHoveredIndex(null)}
                         >
