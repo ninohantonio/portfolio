@@ -27,21 +27,20 @@ export default function MainHeader(){
     }, [y]);
     return (
         <div className="h-[100vh]">
-            <MainLogo/>
             <motion.nav
-                initial={{y: '88vh'}}
-                animate={{y: scrollDirection === 'down' ? 0 : '88vh'}}
+                initial={{y: '1vh'}}
+                animate={{y: scrollDirection === 'down' ? -100 : '1vh'}}
                 transition={{type: 'spring', stiffness: 200}}
                 style={{
                     position: 'fixed',
                     width: '100%',
                     backgroundColor: 'transparent',
-                    zIndex: 20
+                    zIndex: 20,
                 }}
             >
                 <div className={"py-2 relative"}>
                     <div
-                        className="h-8 w-[50vw] rounded-md blur bg-gradient-conic from-green-500 to-blue-600 absolute center-absolute">
+                        className="h-8 w-[50%] rounded-md blur bg-gradient-conic from-green-500 to-blue-600 absolute center-absolute">
 
                     </div>
                     <MainNavbar/>

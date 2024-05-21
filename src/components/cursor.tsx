@@ -16,15 +16,15 @@ const Cursor = () => {
             const link = event.target
             console.log(link)
             if (link?.classList.contains('view')){
-                gsap.to(cursor,{scale:4, zIndex: 1})
+                gsap.to(cursor,{scale:4, zIndex: 50})
                 console.log(cursorLabel)
                 cursorLabel.style.display = 'absolute'
             }else{
-                gsap.to(cursor,{scale:4, zIndex: 1})
+                gsap.to(cursor,{scale:4, zIndex: 50})
             }
         }
         const onMouseLeaveLink = () =>{
-            gsap.to(cursor,{scale:1, zIndex: 10})
+            gsap.to(cursor,{scale:1, zIndex: 50})
             cursorLabel.style.display = 'none'
         }
         document.addEventListener('mousemove',onMouseMove)

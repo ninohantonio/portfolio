@@ -6,7 +6,7 @@ import {IoMdArrowDropright, IoMdHand} from "react-icons/io";
 
 export default function HeroMain(){
     return (
-        <div className="w-[100%] h-[100%] flex flex-row items-center justify-start py-20">
+        <div className="w-[100%] h-[100%] flex flex-row items-center justify-start py-20 z-1">
             <div className="basis-[55%] space-y-16 flex flex-row justify-start mr-20 ml-6">
                 <div className={"text-blue-800 basis-[15%] text-[200px] mr-1 pt-10"}>
                     <GiCurlyWing/>
@@ -19,7 +19,7 @@ export default function HeroMain(){
                      I&apos;m here to realize your digital idea 🤗
                    </p>
                    <div className="w-full flex justify-start">
-                        <div className="border-2 px-6  py-2 text-lg flex flex-row items-center space-x-4">
+                        <div className="border-2 px-6  py-2 text-lg flex flex-row items-center space-x-4 rounded-lg px-6 hover:border-r-blue-700 hover:border-b-blue-400 hover:border-l-green-500 hover:border-t-blue-950 hover:transition-colors border-fine cursor-pointer">
                             <span>Hire me</span> <FaArrowRight/>
                         </div>
                    </div>

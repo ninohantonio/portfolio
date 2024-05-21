@@ -18,12 +18,12 @@ export const navBarElement = [
 
 export default function MainNavbar(){
     return (
-        <div className="w-[65vw] h-14 mx-auto bg-gray-600 bg-opacity-30 backdrop-blur-lg border-r-blue-600 rounded-b-3xl rounded-t-md pt-2 border-b-fine">
+        <div className="w-[65%] h-14 mx-auto bg-gray-600 bg-opacity-30 backdrop-blur-lg border-r-blue-600 rounded-b-3xl rounded-t-md pt-2 border-b-fine">
             <div className="flex flex-row justify-center items-center space-x-4 navbar-element">
                 {
                     navBarElement.map((item, key) => (
                         <div key={key}>
-                            <Link href={item.redirection} className={" text-white flex flex-row z-10 items-center bg-transparent space-x-2 py-1 rounded-lg px-6 hover:border-r-blue-700 hover:border-b-blue-400 hover:border-l-green-500 hover:border-t-blue-950 hover:transition-colors hover:z-50 border-fine "}>
+                            <Link href={item.redirection} className={" text-white flex flex-row items-center bg-transparent space-x-2 py-1 rounded-lg px-6 hover:border-r-blue-700 hover:border-b-blue-400 hover:border-l-green-500 hover:border-t-blue-950 hover:transition-colors border-fine "}>
                                 <span>{item.icon}</span>
                                 <span>{item.text}</span>
                             </Link>

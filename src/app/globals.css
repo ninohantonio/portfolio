@@ -74,3 +74,9 @@ a{
 .border-fine{
   border: 1px solid #a19898;
 }
+
+.rainbow-text {
+  background: linear-gradient(90deg, gray, blue);
+  background-clip: text;
+  color: transparent;
+}
