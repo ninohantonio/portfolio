@@ -33,6 +33,7 @@ export const skillsItems3 = [
         {logo: "/kotlin.png", alt: "kotlin", text: "Kotlin"},
         {logo: "/android.jpeg", alt: "compose", text: "Android Compose"},
     ]},
+    
 ]
 
 export const skillsItems4 = [
@@ -48,7 +49,7 @@ export const skillsItems4 = [
 export default function SkillsContainer(){
     return (
         <>
-            <div className="w-full flex flex-row justify-start items center py-10 px-10">
+            <div className="w-full flex flex-row justify-start items center py-10 px-10" id="skills">
                 {
                     skillsItems.map((item, key) => (
                         <div key={key} className="px-4 mr-8">

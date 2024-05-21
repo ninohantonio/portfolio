@@ -13,7 +13,7 @@ export const AboutCardItems = [
 export default function LeftAbout() {
     let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
-        <div className="h-full bg-black w-full flex flex-col justify-center items-center">
+        <div className="h-full bg-black w-full flex flex-col justify-center items-center" id="about">
             <SectionTitle title="ABOUT ME"/>
             <div className="flex flex-wrap justify-center items-center w-[90%] h-[85%] py-[5%]">
                 {

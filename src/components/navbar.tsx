@@ -10,9 +10,9 @@ import {useEffect} from "react";
 
 export const navBarElement = [
     {text: "HOME", icon: <IoHomeOutline/>, redirection: "#"},
-    {text: "ABOUT", icon: <RxAvatar/>, redirection: "#"},
-    {text: "SKILLS", icon: <MdDeveloperMode/>, redirection: "#"},
-    {text: "PROJECT", icon: <MdOutlineAndroid/>, redirection: "#"},
+    {text: "ABOUT", icon: <RxAvatar/>, redirection: "#about"},
+    {text: "SKILLS", icon: <MdDeveloperMode/>, redirection: "#skills"},
+    {text: "PROJECT", icon: <MdOutlineAndroid/>, redirection: "#project"},
     {text: "CONTACT", icon: <MdPhoneAndroid/>, redirection: "#"},
 ]
 

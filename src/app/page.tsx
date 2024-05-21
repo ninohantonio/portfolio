@@ -3,6 +3,7 @@ import Image from "next/image";
 import MainHeader from "@/components/header";
 import MainAbout from "@/components/about/main";
 import MainSkills from "@/components/skills/main";
+import MainProject from "@/components/project/main";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <MainHeader/>
       <MainAbout/>
       <MainSkills/>
+      <MainProject/>
     </main>
   );
 }
