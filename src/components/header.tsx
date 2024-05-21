@@ -28,7 +28,7 @@ export default function MainHeader(){
     return (
         <div className="h-[100vh]">
             <motion.nav
-                initial={{y: '1vh'}}
+                initial={{y: 100}}
                 animate={{y: scrollDirection === 'down' ? -100 : '1vh'}}
                 transition={{type: 'spring', stiffness: 200}}
                 style={{
