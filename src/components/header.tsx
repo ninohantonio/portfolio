@@ -26,7 +26,7 @@ export default function MainHeader(){
         };
     }, [y]);
     return (
-        <div className="h-[100vh]">
+        <div className="h-[100vh]" id="home">
             <MainLogo/>
             <motion.nav
                 initial={{y: 0}}

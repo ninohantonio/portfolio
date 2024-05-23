@@ -9,11 +9,11 @@ import {blue} from "next/dist/lib/picocolors";
 import {useEffect} from "react";
 
 export const navBarElement = [
-    {text: "HOME", icon: <IoHomeOutline/>, redirection: "#"},
+    {text: "HOME", icon: <IoHomeOutline/>, redirection: "#home"},
     {text: "ABOUT", icon: <RxAvatar/>, redirection: "#about"},
     {text: "SKILLS", icon: <MdDeveloperMode/>, redirection: "#skills"},
     {text: "PROJECT", icon: <MdOutlineAndroid/>, redirection: "#project"},
-    {text: "CONTACT", icon: <MdPhoneAndroid/>, redirection: "#"},
+    {text: "CONTACT", icon: <MdPhoneAndroid/>, redirection: "#contact"},
 ]
 
 export default function MainNavbar(){
