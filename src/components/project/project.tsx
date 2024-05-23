@@ -14,11 +14,10 @@ export const AllProjectData = [
         ]
     },
     {
-        description: {title: ".Miray App", paragraph: "Miray decription", link: "https://elita-devhunt.vercel.app"},
-        captures: {image1: "/miray_app/mirayapp.png", image2: "/miray_app/mirayapp2.png", image3: "/miray_app/mirayapp3.png"},
+        description: {title: ".Dot OO", paragraph: "Dot Zero Zero is an application for spy agent", link: "https://www.youtube.com/watch?v=a_RZjEwPMpU&t=9s"},
+        captures: {image1: "/webcup/webcup1.png", image2: "/webcup/webcup2.png", image3: "/webcup/webcup3.png"},
         technology: [
-            {logo: "/laravel.png", text: "Laravel"},
-            {logo: "/next.svg", text: "NextJS"},
+            {logo: "/next.svg", text: "NextJS Server actions"},
             {logo: "/pgsql.png", text: "PostgreSQL"},
             {logo: "/github.png", text: "Github"},
         ]
