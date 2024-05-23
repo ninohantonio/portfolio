@@ -25,8 +25,8 @@ export const AllProjectData = [
         ]
     },
     {
-        description: {title: "Ferme Data", paragraph: "An online access platform for Agent Double Zero's missions to get an overview of their tasks.", link: "https://www.youtube.com/watch?v=a_RZjEwPMpU&t=9s"},
-        captures: {image1: "/webcup/webcup1.png", image2: "/webcup/webcup2.png", image3: "/webcup/webcup3.png"},
+        description: {title: "Ferme Data", paragraph: "Farm Data is a web application in development that helps farmers manage agricultural production (cattle, pigs, etc.).", link: "https://github.com/ninohantonio/ihm-api"},
+        captures: {image1: "/fermedata/ferme1.png", image2: "/fermedata/ferme2.png", image3: "/fermedata/ferme3.png"},
         technology: [
             {logo: "/springboot.png", text: "SpringBoot"},
             {logo: "/reactjs.png", text: "ReactJS"},

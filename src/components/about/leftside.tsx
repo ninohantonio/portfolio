@@ -5,9 +5,9 @@ import SectionTitle from "../tittle_section";
 
 export const AboutCardItems = [
     {title: "Academic journey", content: "2023-2024: third year in a Bachelor's degree in General Computer Science at ENI Fianarantsoa Madagascar"},
-    {title: "Academic diplomate", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magnam totam ratione, esse nisi a"},
-    {title: "Academic diplomate", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magnam totam ratione, esse nisi a"},
-    {title: "Academic diplomate", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magnam totam ratione, esse nisi a"},
+    {title: "High School Diploma", content: "2019 : Obtained a high school diploma in the general education series C at Arcade High School."},
+    {title: "Passion", content: "I am passionate about the world of digital development, particularly Java and Kotlin technologies for mobile. I would love to work with you on new innovative ideas."},
+    {title: "Objective", content: "My objective is to become a competent engineer and bring innovation to the digital world. I plan to delve deeper into artificial intelligence and robotics in the future."},
 ]
 
 export default function LeftAbout() {

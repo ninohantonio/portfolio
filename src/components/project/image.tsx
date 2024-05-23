@@ -62,7 +62,7 @@ const ImageProject: React.FC<props> = ({image1, image2, image3}) => {
                     borderRadius: "100%"
                 }}
             >
-                 <Image src={image2} alt={image2} width={300} height={100} className=""/>
+                 <Image src={image3} alt={image3} width={300} height={100} className=""/>
             </motion.div>
             {/* <Image src={image2} alt={image2} width={300} height={100} className=""/>
             <Image src={image3} alt={image3} width={300} height={100} className=""/> */}
