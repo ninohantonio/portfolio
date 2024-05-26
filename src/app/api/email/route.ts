@@ -1,10 +1,10 @@
 // pages/api/contact.ts
 import { NextApiRequest, NextApiResponse } from 'next';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 
-async function POST(request: NextApiRequest) {
+async function POST(request: NextRequest) {
   const transporter = nodemailer.createTransport({
     host: "smtps",
     port: 587,
@@ -18,13 +18,14 @@ async function POST(request: NextApiRequest) {
   });
 
   if (request.method === 'POST') {
-    const { name, email, message } = request.body;
+    const body = await request.text(); // Read the body as a string
+      const parsedBody = JSON.parse(body); // Parse the string as JSON
     try {
       const info = await transporter.sendMail({
-        from: email,
+        from: parsedBody.email,
         to: process.env.MAIL_ADDRESS, // your email address to receive messages
-        subject: `New Message from ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+        subject: `New Message from ${parsedBody.name}`,
+        text: `Name: ${parsedBody.name}\nEmail: ${parsedBody.email}\nMessage: ${parsedBody.message}`
       });
       console.log('Email sent: ' + info.response);
       return NextResponse.json({ success: true, message: 'Message sent successfully.' });

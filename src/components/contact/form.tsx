@@ -11,6 +11,7 @@ export default function ContactForm(){
     const handleSubmitMail = async(e: any) => {
         e.preventDefault()
         if(name !== "" && mail !== "" && message !== ""){
+            
             try {
                 const response = await axios.post('/api/email', {name: name, email: mail, message: message});
                 if (response.data.success) {
