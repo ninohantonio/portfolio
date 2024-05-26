@@ -1,9 +1,11 @@
 'use client'
 import Image from "next/image";
+import "react-toastify/dist/ReactToastify.css"
 import MainHeader from "@/components/header";
 import MainAbout from "@/components/about/main";
 import MainSkills from "@/components/skills/main";
 import MainProject from "@/components/project/main";
+import MainContact from "@/components/contact/main";
 
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
       <MainAbout/>
       <MainSkills/>
       <MainProject/>
+      <MainContact/>
     </main>
   );
 }
