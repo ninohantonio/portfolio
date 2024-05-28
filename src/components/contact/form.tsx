@@ -15,7 +15,7 @@ export default function ContactForm(){
             try {
                 const response = await axios.post('/api/email', {name: name, email: mail, message: message});
                 if (response.data.success) {
-                    toast.info("Your message has been sent successfuly", {
+                    toast.info("Thank you, your message has been sent!", {
                         position: "top-right",
                         autoClose: 5000,
                         hideProgressBar: false,
