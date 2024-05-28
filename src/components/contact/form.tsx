@@ -15,7 +15,7 @@ export default function ContactForm(){
             try {
                 const response = await axios.post('/api/email', {name: name, email: mail, message: message});
                 if (response.data.success) {
-                    toast.info("Your message has been sent successfuly", {
+                    toast.error("Something went wrong, please try later", {
                         position: "top-right",
                         autoClose: 5000,
                         hideProgressBar: false,
@@ -28,7 +28,20 @@ export default function ContactForm(){
                     })
                   // Optionally, you can display a success message to the user
                 } else {
-                    toast.info("Your message has been sent successfuly", {
+                        toast.error("Something went wrong, please try later", {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark",
+                        transition: Bounce,
+                    })
+                }
+              } catch (error) {
+                toast.error("Something went wrong, please try later", {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -39,10 +52,6 @@ export default function ContactForm(){
                     theme: "dark",
                     transition: Bounce,
                 })
-                }
-              } catch (error) {
-                console.error('Error submitting form:', error);
-                // Optionally, you can display an error message to the user
               }
             setMail("")
             setMessage("")
