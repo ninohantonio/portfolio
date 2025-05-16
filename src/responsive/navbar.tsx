@@ -16,16 +16,18 @@ export const navBarElement = [
     {text: "CONTACT", icon: <MdPhoneAndroid/>, redirection: "#contact"},
 ]
 
-export default function MainNavbar(){
+export default function MainResponsiveNavbar(){
     return (
-        <div className="w-[65%] h-14 mx-auto bg-gray-600 bg-opacity-30 backdrop-blur-lg border-r-blue-600 rounded-b-3xl rounded-t-md pt-2 border-b-fine">
-            <div className="flex flex-row justify-center items-center space-x-4">
+        <div className="w-[95%] h-12 mx-auto bg-gray-600 bg-opacity-30 backdrop-blur-lg border-r-blue-600 rounded-b-3xl rounded-t-md pt-2 border-b-fine">
+            <div className="flex flex-row justify-center items-center space-x-2 navbar-responsive-element">
                 {
                     navBarElement.map((item, key) => (
                         <div key={key}>
-                            <Link href={item.redirection} className={" text-white flex flex-row items-center bg-transparent space-x-2 py-1 rounded-lg px-6 hover:border-r-blue-700 hover:border-b-blue-400 hover:border-l-green-500 hover:border-t-blue-950 hover:transition-colors border-fine "}>
-                                <span>{item.icon}</span>
-                                <span>{item.text}</span>
+                            <Link href={item.redirection} className={"text-white px-4 flex flex-col items-center justify-center bg-transparent space-x-2 py-1 rounded-lg hover:border-r-blue-700 hover:border-b-blue-400 hover:border-l-green-500 hover:border-t-blue-950 hover:transition-colors border-fine "}>
+                                <div className="flex flex-col justify-center items-center">
+                                    <span>{item.icon}</span>
+                                    <span>{item.text}</span>
+                                </div>
                             </Link>
                         </div>
                     ))
