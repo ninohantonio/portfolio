@@ -1,4 +1,7 @@
+'use client'
+
 import Image from "next/image";
+import Link from "next/link";
 import { BiSolidHand } from "react-icons/bi";
 import { FaArrowRight } from "react-icons/fa";
 import {GiCurlyWing} from "react-icons/gi";
@@ -16,7 +19,10 @@ export default function HeroMain(){
                 <div className="blur glass-back2"></div>
                 <div className="blur glass-back3"></div>
                 <div className="blur glass-front"></div>
-                <div className="flex flex-row items-center justify-start font-mono"><button className="text-white rounded-lg px-[15px] py-[10px] mr-[20px] border-fine">contact me</button><button className="text-white rounded-lg px-[15px] py-[10px] border-fine">download cv</button></div>
+                <div className="flex flex-row items-center justify-start font-mono">
+                    <Link href={'#contact'} className="text-white rounded-lg px-[15px] py-[10px] mr-[20px] border-fine">contact me</Link>
+                    <Link href={'#'} className="text-white rounded-lg px-[15px] py-[10px] border-fine">download cv</Link>
+                </div>
             </div>
             <div className="rounded-[100%] rounded-lg px-6">
                 <Image src={"/NinoPhoto.png"} alt="my photo" width={250} height={100} className="rounded-[100%] border-r-blue-600 rounded-b-3xl rounded-t-md pt-2 border-b-fine"></Image>
