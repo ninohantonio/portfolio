@@ -24,7 +24,7 @@ export default function HeroMain(){
                     <Link href={'#'} className="text-white rounded-lg px-[15px] py-[10px] border-fine">download cv</Link>
                 </div>
             </div>
-            <div className="rounded-[100%] rounded-lg px-6">
+            <div className="rounded-[100%] px-6">
                 <Image src={"/NinoPhoto.png"} alt="my photo" width={250} height={100} className="rounded-[100%] border-r-blue-600 rounded-b-3xl rounded-t-md pt-2 border-b-fine"></Image>
             </div>
         </div>
