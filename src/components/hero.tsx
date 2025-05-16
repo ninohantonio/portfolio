@@ -11,7 +11,7 @@ export default function HeroMain(){
             <div className="p-[5%] glass-effect1">
                 <div className="text-[3.5em] rainbow-text">Antonino Iraky Ny Avo </div>
                 <div className="text-white text-[2em]">👋 Hi there</div>
-                <div className="text-white text-[3em] flex z-3 bg-transparent">I'm a <div className="px-[15px] souligner"> fullstack</div> developer</div>
+                <div className="text-white text-[3em] flex z-3 bg-transparent">I m a <div className="px-[15px] souligner"> fullstack</div> developer</div>
                 <div className="blur glass-back1"></div>
                 <div className="blur glass-back2"></div>
                 <div className="blur glass-back3"></div>
